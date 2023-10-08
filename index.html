@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo-container">
+            <a href="#" class="logo">My Movie App</a>
+          </div>
+          <div class="search-container">
+            <input placeholder="Search" id="movie-input" type="text" />
+            <button id="search-btn" class="btn">Search</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- GENRE SECTION -->
+    <section class="genre">
+      <h2>GENRE</h2>
+      <ul class="genre-container"></ul>
+    </section>
+
+    <!-- Now Playing section -->
+    <section class="now-playing">
+      <div class="container">
+        <h1 class="now-playingHeader">Now Playing</h1>
+        <div class="movie-cardContainer"></div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <section>
+      <div class="container">
+        <dialog class="movie-detailModal"></dialog>
+      </div>
+    </section>
+
+    <!-- Pagination -->
+    <section class="pagination-section">
+      <div class="container">
+        <div class="pagination">
+          <button class="prev-btn">Previous</button>
+          <span class="current-btn">1</span>
+          <button class="next-btn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

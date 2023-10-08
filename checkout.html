@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .header {
+        text-align: center;
+      }
+
+      .checkout-form {
+        margin-top: 20px;
+      }
+
+      .checkout-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .checkout-form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      .checkout-form button {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+
+      a.btn {
+        display: inline-block;
+        padding: 12px 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border-radius: 5px;
+        transition: all 0.4s;
+      }
+
+      a.btn:hover {
+        background-color: #ccc;
+        color: #000;
+      }
+
+      input {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Checkout</h1>
+        <a href="/index.html" class="btn">Go Back</a>
+      </header>
+
+      <form class="checkout-form" action="#">
+        <label for="first-name">First name</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          placeholder="Enter your first name"
+        />
+
+        <label for="last-name">Last name</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          placeholder="Enter your last name"
+        />
+
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+        />
+
+        <label for="credit-card-number">Credit card number</label>
+        <input
+          type="number"
+          id="credit-card-number"
+          name="credit-card-number"
+          placeholder="Enter your credit card number"
+        />
+
+        <label for="expiration-date">Expiration date</label>
+        <input
+          type="date"
+          id="expiration-date"
+          name="expiration-date"
+          placeholder="Enter your credit card expiration date"
+        />
+
+        <label for="cvv">CVV</label>
+        <input
+          type="number"
+          id="cvv"
+          name="cvv"
+          placeholder="Enter your credit card CVV code"
+        />
+
+        <label for="total-wickets">Total number of wickets</label>
+        <input
+          type="number"
+          id="total-wickets"
+          name="total-wickets"
+          placeholder="Enter the total number of wickets"
+        />
+
+        <button type="submit">Proceed to pay</button>
+      </form>
+    </div>
+  </body>
+</html>
